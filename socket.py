@@ -25,7 +25,7 @@ if __name__ == '__main__':
             # decode base64 to string
             response = b64decode(obj['content'].replace('data:;base64,', '')).decode()
             # if flag in response 
-            if 'CyberHub' in response:
+            if 'CybertHub' in response:
                 # print flag
                 print(response) 
                 break
